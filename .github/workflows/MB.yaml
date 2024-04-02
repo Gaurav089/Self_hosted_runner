@@ -16,7 +16,7 @@ jobs:
         run: echo "Running main pipeline"
 
   pre_prod:
-    if: github.ref == 'refs/heads/pre_prod' || success()
+    if: github.ref == 'refs/heads/pre_prod' 
     runs-on: ubuntu-latest
     needs: main
     steps:
